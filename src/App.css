@@ -6,17 +6,14 @@
   --gradient: linear-gradient(
     var(--color-one) 25%,
     var(--color-two) 50%,
-    var(--color-three) 25%
+    rgb(100, 100, 100) 15%,
+    var(--color-three) 10%
   );
+  --box-shadow: 10px 10px 10px (0, 0, 0, 0.6);
 }
-
-.App {
-  text-align: center;
-  background: var(--gradient);
-  color: var(--gradient);
-}
-
-@media (display: 700px) {
+.App body {
+  color: var(--color-four);
+  padding: 0 20px;
 }
 
 .App-header {
@@ -25,14 +22,18 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: var(--color-three);
+  color: var(--color-four);
 }
 
-.App-link {
+.Header Nav.Link {
   color: #61dafb;
 }
 
 .App .App-footer {
   color: var(--color-four);
   font-style: italic;
+}
+.Home Nav.Link {
+  color: var(--color-three);
+  text-decoration: none;
 }

@@ -1,3 +1,18 @@
+:root {
+  --color-one: #001f5c;
+  --color-two: #294378;
+  --color-three: rgb(150, 147, 147);
+  --color-four: #fff;
+  --gradient: linear-gradient(
+    var(--color-one) 25%,
+    var(--color-two) 50%,
+    rgb(100, 100, 100) 15%,
+    var(--color-three) 10%
+  );
+}
+
+ 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +20,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   text-align: center;
+  background: var(--gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--gradient);
 }
 
 code {
