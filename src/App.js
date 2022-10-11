@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App Container">
+      <header className="App-header">Tamief International NG. LTD.</header>
+      <body>
+        Founded in the 90s, Tamief International is an evergreen company
+        dedicated to bringing its customers the highest quality of products and
+        services!
+      </body>
+      <footer className="App-footer">
+        Since 1993, Always There For You...
+      </footer>
+    </Container>
   );
 }
 
